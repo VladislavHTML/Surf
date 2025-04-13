@@ -1,39 +1,49 @@
 @import url(nullstyle.css);
 @import url(https://fonts.googleapis.com/css?family=Rethink+Sans:regular,600,700,800&display=swap);
 body{
-    font-family: Rethink Sans sans-serif;
+    font-family: Rethink Sans;
 }
 .header {
     width: 100%;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+    margin-block-start: 30px;
 }
 .navigation {
-    width: 800px;
+   
 }
 .menu {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
+    margin-inline: auto;
 		&__link {
         font-weight: 700;
         font-size: 20px;
         line-height: 100%;
-        letter-spacing: 0%;
-
 		}
-
 		&__link-phone {
             display: block;
-            color: #0A507A;
+            color: #fff;
+            background-color: #0A507A;
             border-radius: 30px;
-            padding: 5px;
+            padding: 10px;
             flex-direction: row-reverse;
+            margin-inline-start: 250px;
+            
 		}
 }
 .content {
 }
 .conteiner {
+    width: 1700px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 .block1 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/background1.webp") center/cover no-repeat;
 }
 .background1 {
 }
