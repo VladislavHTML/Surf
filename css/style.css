@@ -1,1 +1,32 @@
 @import url(nullstyle.css);
+@import url(https://fonts.googleapis.com/css?family=Rethink+Sans:regular,600,700,800&display=swap);
+body {
+  font-family: Rethink Sans;
+}
+
+.header {
+  width: 100%;
+}
+
+.navigation {
+  width: 800px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.menu__link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.menu__link-phone {
+  display: block;
+  color: #0A507A;
+  border-radius: 30px;
+  padding: 5px;
+  flex-direction: row-reverse;
+}
