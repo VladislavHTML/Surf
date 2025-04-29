@@ -62,8 +62,9 @@ body {
 }
 
 .conteiner {
-  padding-inline-start: 90px;
-  padding-inline-end: 90px;
+  max-inline-size: 1720px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
 }
 
 .block1 {
@@ -406,6 +407,7 @@ body {
 .content-block4 {
   display: flex;
   flex-direction: column;
+  justify-content: end;
 }
 .content-block4 .block4-text {
   margin-block-start: 150px;
@@ -424,6 +426,8 @@ body {
 
 .images {
   display: flex;
+  padding-block-end: 150px;
+  gap: 20px;
 }
 .images__img {
   inline-size: 100%;
@@ -432,10 +436,21 @@ body {
   font-size: 16px;
   font-weight: 600;
   margin-block-start: 20px;
+  display: flex;
+  align-items: end;
 }
 .images__text span {
   display: block;
   margin-block-start: 20px;
+  display: flex;
+  justify-content: end;
+}
+.images__text span::before {
+  content: "/";
+}
+
+.images::nth-child(even) {
+  margin-block-start: 94px;
 }
 
 .footer {
@@ -447,8 +462,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding-block-start: 100px;
-  padding-inline-start: 100px;
-  padding-inline-end: 100px;
 }
 .footer__title {
   font-size: 64px;
@@ -462,31 +475,51 @@ body {
 .footer__conteiner {
   inline-size: 1140px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-inline: auto;
-  margin-block-end: 100px;
 }
-.footer__group {
+.footer .footer-columns {
+  display: flex;
+}
+.footer .footer-columns__group {
   inline-size: 270px;
+  display: flex;
+  flex-direction: column;
 }
-.footer__cubtitle {
+.footer .footer-columns__cubtitle {
   font-size: 21px;
   font-weight: 700;
   margin-block-start: 20px;
   color: #fff;
 }
-.footer__text {
+.footer .footer-columns__text {
   font-size: 16px;
   font-weight: 600;
   margin-block-start: 20px;
   color: #fff;
 }
-.footer__social-network {
+.footer .bottom-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-block-end: 100px;
+}
+.footer .bottom-box__social-network {
   inline-size: 308px;
   display: flex;
   justify-content: space-between;
+  margin-block-start: 59px;
 }
-.footer__bottom-text {
+.footer .bottom-box__social-network ul {
+  display: flex;
+  gap: 20px;
+}
+.footer .bottom-box .bottom-txt {
+  display: flex;
+  gap: 40px;
+}
+.footer .bottom-box .bottom-txt__item {
   font-size: 16px;
   font-weight: 600;
   color: #fff;

@@ -56,8 +56,9 @@ body{
 	flex: 1 1 auto;
 }
 .conteiner {
-	padding-inline-start: 90px;
-	padding-inline-end: 90px;
+	max-inline-size: 1720px;
+	padding-inline-start: 10px;
+	padding-inline-end: 10px;
 }
 .block1 {
     inline-size: 100%;
@@ -390,7 +391,7 @@ body{
 .content-block4 {
 	display: flex;
 	flex-direction: column;
-	
+	justify-content: end;
 .block4-text{
 	
 	margin-block-start: 150px;
@@ -412,7 +413,8 @@ body{
 }
 .images {
 	display: flex;
-	
+	padding-block-end: 150px;
+	gap: 20px;
 		&__grup {
 			
 		}
@@ -425,14 +427,23 @@ body{
 			font-size: 16px;
 			font-weight: 600;
 			margin-block-start: 20px;
+			display: flex;
+			align-items: end;
 			span{
 				display: block;
 				margin-block-start: 20px;	
+				display: flex;
+				justify-content: end;
+			}
+			span::before{
+				content: "/";
 			}
 		}
 		
 }
-
+.images::nth-child(even){
+	margin-block-start: 94px;
+}
 
 .footer {
 	inline-size: 100%;
@@ -442,8 +453,7 @@ body{
 			display: flex;
 			justify-content: space-between;
 			padding-block-start: 100px;
-			padding-inline-start: 100px;
-			padding-inline-end: 100px;
+			
 		}
 
 		&__title {
@@ -460,39 +470,59 @@ body{
 		&__conteiner {
 			inline-size: 1140px;
 			display: flex;
+			flex-direction: column;
 			justify-content: space-between;
 			margin-inline: auto;
-			margin-block-end: 100px;
-		}
-
-		&__group {
-			inline-size: 270px;
-		}
-
-		&__cubtitle {
-			font-size: 21px;
-			font-weight: 700;
-			margin-block-start: 20px;
-			color: #fff
-		}
-
-		&__text {
-			font-size: 16px;
-			font-weight: 600;
-			margin-block-start: 20px;
-			color: #fff
-		}
-
-		&__social-network {
-			inline-size: 308px;
-			display: flex;
-			justify-content: space-between;
 			
 		}
+.footer-columns{
+	display: flex;
+	&__group {
+		inline-size: 270px;
+		display: flex;
+		flex-direction: column;
+	}
 
-		&__bottom-text {
-			font-size: 16px;
-			font-weight: 600;
-			color: #fff
+	&__cubtitle {
+		font-size: 21px;
+		font-weight: 700;
+		margin-block-start: 20px;
+		color: #fff
+	}
+
+	&__text {
+		font-size: 16px;
+		font-weight: 600;
+		margin-block-start: 20px;
+		color: #fff
+	}
+	
+}
+.bottom-box{
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	padding-block-end: 100px;
+	&__social-network {
+		inline-size: 308px;
+		display: flex;
+		justify-content: space-between;
+		margin-block-start: 59px;
+		ul{
+			display: flex;
+			gap: 20px;
 		}
+		
+	}
+.bottom-txt{
+	display: flex;
+	gap: 40px;
+	&__item {
+		font-size: 16px;
+		font-weight: 600;
+		color: #fff;
+	}
+}
+		
+	}
 }
