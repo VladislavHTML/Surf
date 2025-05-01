@@ -14,8 +14,8 @@ body {
 
 .header {
   inline-size: 100%;
-  padding-inline-start: 70px;
-  padding-inline-end: 70px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
   margin-block-start: 30px;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 .menu {
-  max-width: 600px;
+  max-width: 650px;
   display: flex;
   justify-content: space-between;
   gap: 33px;
@@ -53,7 +53,7 @@ body {
 .menu__link {
   color: #0A507A;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   gap: 20px;
 }
 
@@ -62,9 +62,9 @@ body {
 }
 
 .conteiner {
-  max-inline-size: 1720px;
-  padding-inline-start: 10px;
-  padding-inline-end: 10px;
+  max-inline-size: 1700px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
 }
 
 .block1 {
@@ -86,7 +86,7 @@ body {
   inline-size: 100%;
   position: relative;
   z-index: -1;
-  inset-block-start: 145px;
+  inset-block-start: 177px;
 }
 
 .background {
@@ -98,16 +98,16 @@ body {
 }
 
 .block1-subtitle {
-  font-size: 16px;
+  inline-size: 200px;
+  font-size: 20px;
   font-weight: 700;
   background-color: #2B2A29;
   color: #fff;
-  inline-size: 170px;
   border-radius: 15px;
   text-align: center;
   position: relative;
   content: "";
-  inset-block-start: 163px;
+  inset-block-start: 193px;
   inset-inline-end: 10px;
   padding-inline: 6px;
   padding-block: 6px;
@@ -123,7 +123,7 @@ body {
 }
 
 .box-one {
-  inline-size: 390px;
+  inline-size: 500px;
   block-size: 100px;
   display: flex;
   flex-direction: row;
@@ -132,15 +132,14 @@ body {
   text-align: center;
   position: relative;
   content: "";
-  inset-block-start: 190px;
+  inset-block-start: 230px;
   inset-inline-end: 13px;
 }
 .box-one__quote {
-  padding-inline: 17px;
-  padding-block: 10px;
-  font-size: 20px;
+  padding-inline: 15px;
+  padding-block: 5px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 1.3;
   color: #0A507A;
   border: 2px solid #0A507A;
   border-radius: 30px;
@@ -148,8 +147,8 @@ body {
 }
 
 .box-two {
-  inline-size: 318px;
-  block-size: 390px;
+  inline-size: 392px;
+  block-size: 485px;
   background-color: #FFFFFF;
   padding-inline: 17px;
   padding-block: 17px;
@@ -157,13 +156,13 @@ body {
   border-radius: 9px;
 }
 .box-two__title {
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 800;
   text-transform: uppercase;
   margin-block-start: 22px;
 }
 .box-two__time {
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 800;
   line-height: 1.3;
 }
@@ -171,17 +170,17 @@ body {
   display: block;
   color: #2B2A29;
   inline-size: 100px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
   margin-block-start: 10px;
+  margin-block-end: 30px;
   text-decoration: underline;
 }
 .box-two__image {
   inline-size: 100%;
-  block-size: 190px;
-  margin-block-end: 50px;
-  margin-block-start: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .conteiner-buttons {
@@ -244,22 +243,19 @@ body {
 }
 
 .title-block2 {
-  inline-size: 1200px;
-  font-size: 51px;
+  inline-size: 1150px;
+  font-size: 64px;
   font-weight: 800;
   margin-block-start: 150px;
   margin-block-end: 150px;
   text-align: left;
 }
 
-.conteiner-text {
-  inline-size: 900px;
-}
-
 .content-block2 {
   display: flex;
   justify-content: space-between;
   gap: 0 120px;
+  margin-block-end: 150px;
 }
 .content-block2__cubtitle {
   font-size: 20px;
@@ -267,7 +263,7 @@ body {
   margin-block-end: 20px;
 }
 .content-block2__title {
-  font-size: 62px;
+  font-size: 64px;
   font-weight: 800;
   margin-block-end: 100px;
 }
@@ -289,8 +285,8 @@ body {
   padding-block: 10px;
 }
 .content-block2__image {
-  max-inline-size: 700px;
-  max-block-size: 800px;
+  max-inline-size: 100%;
+  max-block-size: 100%;
 }
 
 .content-block2__activities {
@@ -309,7 +305,7 @@ body {
   padding-block-end: 10px;
   position: absolute;
   content: "";
-  inset-block-end: 500px;
+  inset-block-end: 100px;
   margin-inline-end: 50px;
 }
 
