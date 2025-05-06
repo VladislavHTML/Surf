@@ -17,6 +17,11 @@ body {
   padding-inline-start: 20px;
   padding-inline-end: 20px;
   margin-block-start: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .burger {
@@ -32,8 +37,10 @@ body {
   align-items: center;
   gap: 20px;
 }
-.navigation__link-phone {
+
+.link-phone {
   inline-size: 187px;
+  block-size: 46px;
   display: flex;
   color: #fff;
   font-size: 16px;
@@ -43,8 +50,9 @@ body {
   padding-block: 9px;
   align-items: center;
   flex-direction: row;
+  z-index: 10;
 }
-.navigation__link-phone img {
+.link-phone img {
   margin-inline-end: 7px;
   inline-size: 18px;
   block-size: 19px;
@@ -534,20 +542,54 @@ body {
   color: #fff;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 860px) {
   .burger {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    inline-size: 33px;
+    block-size: 22px;
     cursor: pointer;
-    width: 30px;
-    height: 22px;
+    z-index: 11;
   }
   .burger span {
     display: block;
-    width: 100%;
-    height: 4px;
+    inline-size: 100%;
+    block-size: 4px;
     background-color: #000;
-    border-radius: 5px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+  .navigation {
+    background-color: #9a9ea6;
+    inline-size: 100%;
+    block-size: 100%;
+    position: absolute;
+    content: "";
+    inset-block-start: -100%;
+    inset-inline-start: 0;
+    transition-duration: 1.5s;
+    z-index: 10;
+  }
+  .navigation .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-inline: auto;
+  }
+  .navigation.active {
+    inset-block-start: 0;
+    transition-duration: 1.5s;
   }
 }
