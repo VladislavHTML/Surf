@@ -46,7 +46,7 @@ body{
 	padding-block: 9px;
 	align-items: center;
 	flex-direction: row;
-	z-index: 10;
+	z-index: 9;
 	img{
 		margin-inline-end: 7px;
 		inline-size: 18px;
@@ -58,7 +58,7 @@ body{
     display: flex;
 	flex-wrap: wrap;
     justify-content: space-between;
-	gap: 33px;
+	gap: 20px;
 		&__link {
 		color: #0A507A;
         font-weight: 700;
@@ -148,7 +148,7 @@ body{
 }
 .box-two {
 	inline-size: 392px;
-	min-block-size: 485px;
+	min-block-size: 385px;
 	background-color: #FFFFFF;
 	padding-inline: 17px;
 	padding-block: 17px;
@@ -603,5 +603,84 @@ body{
 		inset-block-start: 0;
 		transition-duration: 1.5s;
 	}
+	.title1 {
+		
+		inset-block-start: 77px;
+	}
+	.block1-subtitle{
+		inset-block-start: 93px;
+	}
+	.conteiner-boxs{
+		display: flex;
+		flex-wrap: wrap;
+		.box-one{
+			order: 1;
+			inline-size: 100%;
+			margin-block-start: 20px;
+			margin-block-end: 250px;
+			&__quote{
+				inline-size: 100%;
+			}
+		}
+		.box-two{
+			inline-size: 100%;
+			margin-inline: auto;
+			margin-block-end: 20px;
+		}
+		
+	}
+	.conteiner-buttons{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		.butons{
+			margin-block-end: 50px;
+			display: flex;
+			justify-content: flex-start;
+		}
+	}
 	
+}
+@media (max-width: 426px){
+	.box-one{
+		
+		&__quote{
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+		}
+	}
+	.butons{
+		inline-size: 100%;
+		.button1{
+			inline-size: 100%;
+			font-size: 20px;
+		}
+		.button2{
+			inline-size: 100%;
+			font-size: 20px;
+		}
+	}
+	.social-network{
+		margin-block-start: 50px;
+	}
+	.block1-subtitle{
+		font-size: 16px;
+	}
+	.box-two {
+		block-size: 100%;
+			&__title {
+				font-size: 20px;
+			}
+	
+			&__time {
+				font-size: 20px;
+			}
+	
+			&__subtitle {
+				font-size: 13px;
+			}
+	}
 }

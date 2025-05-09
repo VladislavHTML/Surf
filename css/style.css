@@ -50,7 +50,7 @@ body {
   padding-block: 9px;
   align-items: center;
   flex-direction: row;
-  z-index: 10;
+  z-index: 9;
 }
 .link-phone img {
   margin-inline-end: 7px;
@@ -63,7 +63,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 33px;
+  gap: 20px;
 }
 .menu__link {
   color: #0A507A;
@@ -162,7 +162,7 @@ body {
 
 .box-two {
   inline-size: 392px;
-  min-block-size: 485px;
+  min-block-size: 385px;
   background-color: #FFFFFF;
   padding-inline: 17px;
   padding-block: 17px;
@@ -591,5 +591,77 @@ body {
   .navigation.active {
     inset-block-start: 0;
     transition-duration: 1.5s;
+  }
+  .title1 {
+    inset-block-start: 77px;
+  }
+  .block1-subtitle {
+    inset-block-start: 93px;
+  }
+  .conteiner-boxs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .conteiner-boxs .box-one {
+    order: 1;
+    inline-size: 100%;
+    margin-block-start: 20px;
+    margin-block-end: 250px;
+  }
+  .conteiner-boxs .box-one__quote {
+    inline-size: 100%;
+  }
+  .conteiner-boxs .box-two {
+    inline-size: 100%;
+    margin-inline: auto;
+    margin-block-end: 20px;
+  }
+  .conteiner-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .conteiner-buttons .butons {
+    margin-block-end: 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 426px) {
+  .box-one__quote {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .butons {
+    inline-size: 100%;
+  }
+  .butons .button1 {
+    inline-size: 100%;
+    font-size: 20px;
+  }
+  .butons .button2 {
+    inline-size: 100%;
+    font-size: 20px;
+  }
+  .social-network {
+    margin-block-start: 50px;
+  }
+  .block1-subtitle {
+    font-size: 16px;
+  }
+  .box-two {
+    block-size: 100%;
+  }
+  .box-two__title {
+    font-size: 20px;
+  }
+  .box-two__time {
+    font-size: 20px;
+  }
+  .box-two__subtitle {
+    font-size: 13px;
   }
 }
