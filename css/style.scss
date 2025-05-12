@@ -208,7 +208,7 @@ body{
 		block-size: 50px;
 	}
 }
-.butons {
+.buttons {
 	inline-size: 450px;
 	display: flex;
 	gap: 20px;
@@ -220,8 +220,7 @@ body{
 	font-weight: 800;
 	text-transform: uppercase;
 	text-align: center;
-}
-.button1 {
+	&__button1 {
 	inline-size: 200px;
 	font-size: 32px;
 	background-color: #2B2A29;
@@ -230,7 +229,7 @@ body{
 	padding-inline: 10px;
 	padding-block: 10px;
 }
-.button2 {
+	&__button2 {
 	inline-size: 200px;
 	font-size: 32px;
 	background-color: rgba(255, 255, 255, 0.3);
@@ -242,12 +241,14 @@ body{
 	
 
 }
+}
+
 .block2 {
 	inline-size: 100%;
 	block-size: 100%;
 }
 .title-block2 {
-	inline-size: 1150px;
+	max-inline-size: 1150px;
 	font-size: 64px;
 	font-weight: 800;
 	margin-block-start: 150px;
@@ -261,7 +262,7 @@ body{
 .content-block2 {
 	display: flex;
 	justify-content: space-between;
-	gap: 0 220px;
+	gap: 0 150px;
 	margin-block-end: 150px;
 	
 		&__cubtitle {
@@ -294,8 +295,8 @@ body{
 			}
 		}
 		&__image {
-			max-inline-size: 100%;
-			max-block-size: 100%;
+			inline-size: 100%;
+			object-fit: contain;
 		}
 }
 .content-block2__activities{
@@ -318,6 +319,7 @@ body{
 .conteiner-images{
 	display: flex;
 	justify-content: flex-end;
+	align-items: end;
 	position: relative;
 
 }
@@ -547,6 +549,19 @@ body{
 		
 	}
 }
+@media (max-width: 1280px){
+	.content-block2{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.conteiner-text{
+		inline-size: 100%;
+	}
+	.block2-box{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
 @media (max-width: 860px) {
 	.burger {
 		display: flex;
@@ -633,13 +648,66 @@ body{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
-		.butons{
+		.buttons	{
 			margin-block-end: 50px;
 			display: flex;
 			justify-content: flex-start;
 		}
 	}
-	
+	.title-block2{
+		font-size: 30px;
+		margin-block-start: 30px;
+		margin-block-end: 30px;
+	}
+	.content-block2 {
+
+			&__cubtitle {
+				font-size: 16px;
+			}
+
+			&__title {
+				font-size: 25px;
+				margin-block-end: 30px;
+			}
+			.quote-box {
+				display: flex;
+				flex-direction: column;
+				inline-size: 100%;
+				margin-block-end: 50px;
+			&__quote {
+				font-size: 16px;
+			}
+		}
+		.text-box{
+			&__text{
+				font-size: 16px;
+			}
+		}
+	}
+	.block2-top {
+
+		&__cubtitle {
+			font-size: 16px;
+		}
+
+		&__title {
+			font-size: 30px;
+		}
+}
+	.content-block2__activities{
+		inline-size: 100px;
+		font-size: 20px;
+
+	}
+	.block2-circules {
+		
+		&__circle {
+			font-size: 10px;
+			text-align: center;
+		}
+}
+
+
 }
 @media (max-width: 426px){
 	.box-one{
@@ -652,13 +720,13 @@ body{
 			justify-content: center;
 		}
 	}
-	.butons{
+	.buttons{
 		inline-size: 100%;
-		.button1{
+		&__button1{
 			inline-size: 100%;
 			font-size: 20px;
 		}
-		.button2{
+		&__button2{
 			inline-size: 100%;
 			font-size: 20px;
 		}
@@ -682,5 +750,8 @@ body{
 			&__subtitle {
 				font-size: 13px;
 			}
+	}
+	.title-block2{
+		font-size: 20px;
 	}
 }
