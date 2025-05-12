@@ -397,7 +397,7 @@ body {
   display: flex;
 }
 .block2-circules__circle {
-  font-style: 26px;
+  font-size: 26px;
   font-weight: 700;
   inline-size: 100%;
   block-size: 100%;
