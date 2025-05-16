@@ -451,6 +451,8 @@ body{
 			font-weight: 600;
 			margin-block-start: 20px;
 			display: flex;
+			justify-content: space-between;
+			gap: 40px;
 			align-items: end;
 			 
 			
@@ -562,6 +564,9 @@ body{
 	.block2-box{
 		display: flex;
 		flex-wrap: wrap;
+		.block2-midle{
+			inline-size: 100%;
+		}
 	}
 }
 @media (max-width: 860px) {
@@ -698,7 +703,7 @@ body{
 }
 	.content-block2__activities{
 		inline-size: 100px;
-		font-size: 20px;
+		font-size: 16px;
 
 	}
 	.block2-circules {
@@ -711,17 +716,13 @@ body{
 	.images{
 		display: flex;
 		flex-wrap: wrap;
-	}
-	.block4-text {
-
-		&__cubtitle {
-			font-size: 16px;
+		&__grup {
+		&:nth-child(even) {
+		  margin-block-start: 0;
 		}
-
-		&__title {
-			font-size: 20px;
-		}
+	  }
 	}
+	
 	.footer-columns{
 		display: flex;
 		flex-wrap: wrap;
@@ -740,6 +741,7 @@ body{
 		flex-direction: column-reverse;
 		gap: 40px;
 	}
+	
 }
 @media (max-width: 426px){
 	.box-one{
@@ -786,9 +788,14 @@ body{
 	.title-block2{
 		font-size: 20px;
 	}
-	
-	.block2-circules{
-		margin-block-end: -100px;
+	.content-block2__activities{
+		inset-block-end: 50px;
+		margin-inline-end: 10px;
+
+	}	
+	.block3{
+		display: none;
 	}
 	
+
 }
