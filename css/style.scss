@@ -47,6 +47,12 @@ body{
 	align-items: center;
 	flex-direction: row;
 	z-index: 9;
+	@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
+		}
 	img{
 		margin-inline-end: 7px;
 		inline-size: 18px;
@@ -54,7 +60,7 @@ body{
 	}
 }
 .menu {
-	max-width: 650px;
+	max-inline-size: 650px;
     display: flex;
 	flex-wrap: wrap;
     justify-content: space-between;
@@ -64,8 +70,16 @@ body{
         font-weight: 700;
         font-size: 20px;
 		gap: 20px;
+		display: inline-block;
+		@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
 		}
 }
+	
+	}
 .content {
 	flex: 1 1 auto;
 }
@@ -79,7 +93,7 @@ body{
     inline-size: 100%;
     block-size: 100%;
    	background: url(../img/background1.webp) center/cover no-repeat;
-	min-block-size: 100vh;
+	
 }
 .true-title{
 	position: absolute;
@@ -206,6 +220,12 @@ body{
 	img{
 		inline-size: 50px;
 		block-size: 50px;
+		@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
+		}
 	}
 }
 .buttons {
@@ -228,6 +248,13 @@ body{
 	border-radius: 30px;
 	padding-inline: 10px;
 	padding-block: 10px;
+	@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
+		}
+	
 }
 	&__button2 {
 	inline-size: 200px;
@@ -238,7 +265,12 @@ body{
 	border-radius: 30px;
 	padding-block-start: 10px;
 	padding-block-end: 10px;
-	
+	@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
+		}
 
 }
 }
@@ -379,6 +411,12 @@ body{
 			padding-inline: 10px;
 			padding-block: 10px;
 			align-self: start;
+			@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
+		}
 		}
 	}
 .block2-circules{
@@ -521,7 +559,13 @@ body{
 		font-size: 16px;
 		font-weight: 600;
 		margin-block-start: 20px;
-		color: #fff
+		color: #fff;
+		@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
+		}
 	}
 	
 }
@@ -538,6 +582,16 @@ body{
 		ul{
 			display: flex;
 			gap: 20px;
+			
+		}
+		a{
+			display: inline-block;
+			@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
+		}
 		}
 		
 	}
@@ -548,6 +602,12 @@ body{
 		font-size: 16px;
 		font-weight: 600;
 		color: #fff;
+		@media(hover: hover){
+  		&:hover {
+		transform: translateY(-5px);
+	}
+
+		}
 	}
 }
 		
@@ -691,16 +751,21 @@ body{
 			}
 		}
 	}
-	.block2-top {
-
+	.content-block4 {
+.block4-text {
+		
 		&__cubtitle {
-			font-size: 16px;
+			font-size: 20px;
 		}
 
 		&__title {
-			font-size: 30px;
+			font-size: 40px;
 		}
 }
+	}
+
+
+
 	.content-block2__activities{
 		inline-size: 100px;
 		font-size: 16px;
@@ -711,6 +776,7 @@ body{
 		&__circle {
 			font-size: 10px;
 			text-align: center;
+			
 		}
 }
 	.images{
@@ -741,7 +807,17 @@ body{
 		flex-direction: column-reverse;
 		gap: 40px;
 	}
-	
+	.block2-top {
+
+		&__cubtitle {
+			font-size: 20px;
+		}
+
+		&__title {
+			font-size: 30px;
+		}
+}
+
 }
 @media (max-width: 426px){
 	.box-one{
@@ -793,9 +869,24 @@ body{
 		margin-inline-end: 10px;
 
 	}	
-	.block3{
-		display: none;
+	.content-block4 {
+.block4-text {
+		margin-block: 30px;
+		
+		
+}
 	}
-	
+	.block2-circules {
+		
+		&__circle {
+			font-size: 10px;
+			text-align: center;
+			margin-block: 0;
+		margin-inline: 0;
+		}
+}
+.block3{
+	display: none;
+}
 
 }
