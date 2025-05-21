@@ -50,11 +50,11 @@ body {
   padding-block: 9px;
   align-items: center;
   flex-direction: row;
-  z-index: 9;
+  z-index: 10;
 }
 @media (hover: hover) {
   .link-phone:hover {
-    transform: translateY(-5px);
+    background-color: #157AB3;
   }
 }
 .link-phone img {
@@ -79,7 +79,7 @@ body {
 }
 @media (hover: hover) {
   .menu__link:hover {
-    transform: translateY(-5px);
+    color: #000;
   }
 }
 
@@ -123,30 +123,29 @@ body {
 }
 
 .block1-subtitle {
+  display: block;
   inline-size: 200px;
   font-size: 20px;
   font-weight: 700;
   background-color: #2B2A29;
   color: #fff;
-  border-radius: 15px;
+  border-radius: 20px;
   text-align: center;
   margin-inline: 10px;
   margin-block: 10px;
-  position: relative;
-  content: "";
-  inset-block-start: 193px;
-  inset-inline-end: 10px;
-  padding-inline: 6px;
-  padding-block: 6px;
+  padding-inline: 10px;
+  padding-block: 5px;
+  margin-block-start: 193px;
+}
+@media (hover: hover) {
+  .block1-subtitle:hover {
+    background-color: #0A507A;
+  }
 }
 
 .conteiner-boxs {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  content: "";
-  inset-block-start: 470px;
-  margin-block-start: -340px;
 }
 
 .box-one {
@@ -157,7 +156,7 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   text-align: center;
-  margin-block-start: 230px;
+  margin-block-start: 200px;
 }
 .box-one__quote {
   padding-inline: 15px;
@@ -177,6 +176,7 @@ body {
   padding-inline: 17px;
   padding-block: 17px;
   margin-block-end: 103px;
+  margin-block-start: -60px;
   border-radius: 9px;
 }
 .box-two__title {
@@ -212,10 +212,7 @@ body {
 .conteiner-buttons {
   display: flex;
   justify-content: space-between;
-  padding-block-end: 500px;
-  position: relative;
-  content: "";
-  inset-block-start: 443px;
+  padding-block-end: 50px;
 }
 
 .social-network {
@@ -259,7 +256,9 @@ body {
 }
 @media (hover: hover) {
   .buttons__button1:hover {
-    transform: translateY(-5px);
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
   }
 }
 .buttons__button2 {
@@ -274,7 +273,8 @@ body {
 }
 @media (hover: hover) {
   .buttons__button2:hover {
-    transform: translateY(-5px);
+    background-color: #0A507A;
+    color: #fff;
   }
 }
 
@@ -419,7 +419,9 @@ body {
 }
 @media (hover: hover) {
   .block2-midle__button:hover {
-    transform: translateY(-5px);
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
   }
 }
 
@@ -438,6 +440,12 @@ body {
   justify-content: center;
   align-items: center;
   margin-block-end: 100px;
+}
+@media (hover: hover) {
+  .block2-circules__circle:hover {
+    background-color: #0A507A;
+    color: #fff;
+  }
 }
 
 .block3 {
@@ -642,12 +650,12 @@ body {
     background-color: #9a9ea6;
     inline-size: 100%;
     block-size: 100%;
-    position: absolute;
+    position: fixed;
     content: "";
+    overflow: auto;
     inset-block-start: -100%;
     inset-inline-start: 0;
     transition-duration: 1.5s;
-    z-index: 10;
   }
   .navigation .menu {
     display: flex;
@@ -661,10 +669,7 @@ body {
     transition-duration: 1.5s;
   }
   .title1 {
-    inset-block-start: 77px;
-  }
-  .block1-subtitle {
-    inset-block-start: 93px;
+    inset-block-start: 100px;
   }
   .conteiner-boxs {
     display: flex;
@@ -682,6 +687,7 @@ body {
   .conteiner-boxs .box-two {
     inline-size: 100%;
     margin-inline: auto;
+    margin-block-start: 100px;
     margin-block-end: 20px;
   }
   .conteiner-buttons {
@@ -762,6 +768,9 @@ body {
   }
   .block2-top__title {
     font-size: 30px;
+  }
+  .block1-subtitle {
+    margin-block-start: 130px;
   }
 }
 @media (max-width: 426px) {
