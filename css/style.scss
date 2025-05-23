@@ -646,6 +646,13 @@ body{
 	}
 }
 @media (max-width: 860px) {
+	body.scroll-lock {
+	position: fixed;
+	content: "";
+  	overflow: hidden;
+  	height: 100vh;
+  	touch-action: none;
+}
 	.burger {
 		display: flex;
 		flex-direction: column;
@@ -689,14 +696,25 @@ body{
 		inset-block-start: -100%;
 		inset-inline-start: 0;
 		transition-duration: 1.5s;
+		 overflow-y: auto;
+  		max-height: 100vh;
 		.menu{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
 		margin-inline: auto;
+		padding-block-start: 100px;
+		padding-block-end: 100px;
 		}
+		
 	}
+	@media(hover: none){
+  		.menu {
+		color: #0A507A;
+	}
+
+		}
 	.navigation.active{
 		inset-block-start: 0;
 		transition-duration: 1.5s;
@@ -836,6 +854,71 @@ body{
 	margin-block-start: 130px;
 }
 
+	@media(hover: none){
+  		.link-phone {
+		background-color: #0A507A;
+	}
+
+		}
+	@media(hover: none){
+  		.block1-subtitle {
+		background-color: #2B2A29;
+		 color: #fff;
+	}
+
+		}
+	@media(hover: none){
+  		.social-network {
+		 transform: translateY(0px);
+	}
+
+		}
+	@media(hover: none){
+  		.buttons__button1 {
+		background-color: #2B2A29;
+		color: #fff;
+	}
+
+		}
+	@media(hover: none){
+  		.buttons__button2 {
+		background-color: rgba(255, 255, 255, 0.3); 
+		color: #2B2A29;
+	}
+
+		}
+	@media(hover: none){
+  		.block2-midle__button {
+		background-color: #2B2A29;
+  		color: #fff;
+	}
+
+		}
+	@media(hover: none){
+  		.block2-circules__circle {
+		background-color: #fff;
+  		color: #2B2A29;
+	}
+
+		}
+	@media(hover: none){
+  		.footer-columns__text {
+		 transform: translateY(0px);
+	}
+
+		}
+	@media(hover: none){
+  		.bottom-box__social-network {
+		 transform: translateY(0px);
+	}
+
+		}
+	@media(hover: none){
+  		.bottom-txt__item {
+		 transform: translateY(0px);
+	}
+
+		}
 }
 @media (max-width: 426px){
 	.box-one{
@@ -858,6 +941,10 @@ body{
 			inline-size: 100%;
 			font-size: 20px;
 		}
+	}
+	.block2-midle__button{
+		inline-size: 100%;
+		font-size: 20px;
 	}
 	.social-network{
 		margin-block-start: 50px;

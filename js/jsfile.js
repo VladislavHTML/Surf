@@ -1,9 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
     const burger = document.querySelector(".burger");
     const navigation = document.querySelector(".navigation");
+    const body = document.body;
 
-    burger.addEventListener("click", function () {
-        burger.classList.toggle("active");
+    function toggleMenu() {
+        const isActive = burger.classList.toggle("active");
         navigation.classList.toggle("active");
-    });
+
+        if (isActive) {
+            lockScroll();
+        } else {
+            unlockScroll();
+        }
+    }
+
+    function lockScroll() {
+        body.classList.add("scroll-lock");
+    }
+
+    function unlockScroll() {
+        body.classList.remove("scroll-lock");
+    }
+
+    if (burger) {
+        burger.addEventListener("click", toggleMenu);
+    }
 });
