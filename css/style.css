@@ -22,6 +22,9 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  position: fixed;
+  content: "";
+  z-index: 50;
 }
 
 .burger {
