@@ -80,7 +80,7 @@ body {
   gap: 20px;
   display: inline-block;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .menu__link:hover {
     color: #000;
   }
@@ -679,7 +679,7 @@ body {
     padding-block-end: 100px;
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .menu {
     color: #0A507A;
     font-weight: 700;
@@ -799,12 +799,12 @@ body {
   }
 }
 @media (max-width: 860px) and (hover: none) {
-  .link-phone {
+  .link-phone:hover {
     background-color: #0A507A;
   }
 }
 @media (max-width: 860px) and (hover: none) {
-  .block1-subtitle {
+  .block1-subtitle:hover {
     background-color: #2B2A29;
     color: #fff;
   }
