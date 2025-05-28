@@ -273,7 +273,7 @@ body{
 	border-radius: 30px;
 	padding-block-start: 10px;
 	padding-block-end: 10px;
-	@media (hover: hover){
+	@media (hover: hover) and (pointer: fine){
   		&:hover {
 		background-color: #0A507A;
 		color: #fff;
@@ -888,8 +888,8 @@ body{
 		}
 	@media (hover: none) and (pointer: coarse){
   		.buttons__button2 {
-		background-color: #0A507A;
-		color: #fff;
+		background-color: rgba(255, 255, 255, 0.3); 
+		color: #2B2A29;
 	}
 
 		}

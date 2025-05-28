@@ -274,7 +274,7 @@ body {
   padding-block-start: 10px;
   padding-block-end: 10px;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .buttons__button2:hover {
     background-color: #0A507A;
     color: #fff;
