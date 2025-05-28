@@ -51,7 +51,7 @@ body{
 	align-items: center;
 	flex-direction: row;
 	z-index: 10;
-	@media (hover: hover){
+	@media (hover: hover) and (pointer: fine){
   		&:hover {
 		background-color: #157AB3;
 	}
@@ -135,7 +135,7 @@ body{
 	margin-block-start: 193px;
 	
 	
-	@media (hover: hover){
+	@media (hover: hover) and (pointer: fine){
   		&:hover {
 		background-color: #0A507A;
 	}
@@ -226,7 +226,7 @@ body{
 	img{
 		inline-size: 50px;
 		block-size: 50px;
-		@media (hover: hover){
+		@media (hover: hover) and (pointer: fine){
   		&:hover {
 		transform: translateY(-5px);
 	}
@@ -254,7 +254,7 @@ body{
 	border-radius: 30px;
 	padding-inline: 10px;
 	padding-block: 10px;
-	@media (hover: hover){
+	@media (hover: hover) and (pointer: fine){
   		&:hover {
 		color: #000;
 		background-color: #fff;
@@ -420,7 +420,7 @@ body{
 			padding-inline: 10px;
 			padding-block: 10px;
 			align-self: start;
-			@media (hover: hover){
+			@media (hover: hover) and (pointer: fine){
   		&:hover {
 		color: #000;
 		background-color: #fff;
@@ -444,7 +444,7 @@ body{
 			justify-content: center;
 			align-items: center;
 			margin-block-end: 100px;
-				@media (hover: hover){
+		@media (hover: hover) and (pointer: fine){
   		&:hover {
 		background-color: #0A507A;
 		color: #fff;
@@ -578,7 +578,7 @@ body{
 		font-weight: 600;
 		margin-block-start: 20px;
 		color: #fff;
-		@media (hover: hover){
+		@media (hover: hover) and (pointer: fine){
   		&:hover {
 		transform: translateY(-5px);
 	}
@@ -604,7 +604,7 @@ body{
 		}
 		a{
 			display: inline-block;
-			@media (hover: hover){
+			@media (hover: hover) and (pointer: fine){
   		&:hover {
 		transform: translateY(-5px);
 	}
@@ -620,7 +620,7 @@ body{
 		font-size: 16px;
 		font-weight: 600;
 		color: #fff;
-		@media (hover: hover){
+		@media (hover: hover) and (pointer: fine){
   		&:hover {
 		transform: translateY(-5px);
 	}
@@ -860,66 +860,66 @@ body{
 	margin-block-start: 130px;
 }
 
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.link-phone:hover {
 		background-color: #0A507A;
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.block1-subtitle:hover {
 		background-color: #2B2A29;
 		 color: #fff;
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.social-network {
 		 transform: translateY(0px);
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.buttons__button1 {
 		background-color: #2B2A29;
 		color: #fff;
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.buttons__button2 {
 		background-color: rgba(255, 255, 255, 0.3); 
 		color: #2B2A29;
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.block2-midle__button {
 		background-color: #2B2A29;
   		color: #fff;
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.block2-circules__circle {
 		background-color: #fff;
   		color: #2B2A29;
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.footer-columns__text {
 		 transform: translateY(0px);
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.bottom-box__social-network {
 		 transform: translateY(0px);
 	}
 
 		}
-	@media (hover: none){
+	@media (hover: none) and (pointer: coarse){
   		.bottom-txt__item {
 		 transform: translateY(0px);
 	}

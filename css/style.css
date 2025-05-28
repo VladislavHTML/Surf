@@ -55,7 +55,7 @@ body {
   flex-direction: row;
   z-index: 10;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .link-phone:hover {
     background-color: #157AB3;
   }
@@ -140,7 +140,7 @@ body {
   padding-block: 5px;
   margin-block-start: 193px;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .block1-subtitle:hover {
     background-color: #0A507A;
   }
@@ -229,7 +229,7 @@ body {
   inline-size: 50px;
   block-size: 50px;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .social-network img:hover {
     transform: translateY(-5px);
   }
@@ -257,7 +257,7 @@ body {
   padding-inline: 10px;
   padding-block: 10px;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .buttons__button1:hover {
     color: #000;
     background-color: #fff;
@@ -420,7 +420,7 @@ body {
   padding-block: 10px;
   align-self: start;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .block2-midle__button:hover {
     color: #000;
     background-color: #fff;
@@ -444,7 +444,7 @@ body {
   align-items: center;
   margin-block-end: 100px;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .block2-circules__circle:hover {
     background-color: #0A507A;
     color: #fff;
@@ -561,7 +561,7 @@ body {
   margin-block-start: 20px;
   color: #fff;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .footer .footer-columns__text:hover {
     transform: translateY(-5px);
   }
@@ -585,7 +585,7 @@ body {
 .footer .bottom-box__social-network a {
   display: inline-block;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .footer .bottom-box__social-network a:hover {
     transform: translateY(-5px);
   }
@@ -599,7 +599,7 @@ body {
   font-weight: 600;
   color: #fff;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .footer .bottom-box .bottom-txt__item:hover {
     transform: translateY(-5px);
   }
@@ -798,57 +798,57 @@ body {
     margin-block-start: 130px;
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .link-phone:hover {
     background-color: #0A507A;
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .block1-subtitle:hover {
     background-color: #2B2A29;
     color: #fff;
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .social-network {
     transform: translateY(0px);
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .buttons__button1 {
     background-color: #2B2A29;
     color: #fff;
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .buttons__button2 {
     background-color: rgba(255, 255, 255, 0.3);
     color: #2B2A29;
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .block2-midle__button {
     background-color: #2B2A29;
     color: #fff;
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .block2-circules__circle {
     background-color: #fff;
     color: #2B2A29;
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .footer-columns__text {
     transform: translateY(0px);
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .bottom-box__social-network {
     transform: translateY(0px);
   }
 }
-@media (max-width: 860px) and (hover: none) {
+@media (max-width: 860px) and (hover: none) and (pointer: coarse) {
   .bottom-txt__item {
     transform: translateY(0px);
   }
